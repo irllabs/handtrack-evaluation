@@ -16,5 +16,10 @@ Change the following lines in `leap_motion/leap_evaluation.py`
 If you have a python distribution from MacPorts or Homebrew you will need to use the install name tool to point to the correct version of python. Follow the steps in this [tutorial] (https://developer.leapmotion.com/documentation/python/devguide/Project_Setup.html?proglang=python).
 
 ## Evaluation 
+### Steps to run the evaluation script
+
+1. The script can be found at evaluation/compare.py
+2. Run `python compare.py <path to ground truth> <path to algorithm>` in the shell to compare the performace using the fingertip positions from two algorithms
+3. The script outputs a mean-squared error (MSE) averaged across the number of frames used
 
 ## Ground Truth Labeler
