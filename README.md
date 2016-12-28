@@ -27,6 +27,6 @@ If you have a python distribution from MacPorts or Homebrew you will need to use
 Used to obtain ground truth (x,y) coordinates for the fingertip positions. 
 
 1. The script can be found at label_tool/labeler.py
-2. Run python `labeler.py --input <InputDir> --output <OutputDir>`, where the input directory contains the images to be labeled
+2. Run `python labeler.py --input <InputDir> --output <OutputDir>`, where the input directory contains the images to be labeled
 3. Make sure to label the fingertips in the same order, as extracted using any tracking algorithms. Currently, the tracking algorithm finds the fingertips with the highest y-coordinate to the lowest
 4. The script contains additional information for the labeler tool
