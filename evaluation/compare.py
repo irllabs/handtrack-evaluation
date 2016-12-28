@@ -28,11 +28,11 @@ def compare(path1, path2):
 	table1 = table1[skipFrames:-skipFrames]
 	table2 = table2[skipFrames:-skipFrames]
 
-	#swap
-	temp = table2
-	table2 = table1
-	table1 = temp
-
+	#Make table2 have more entries (fps)
+	if len(table1) > len(table2):
+		temp = table2
+		table2 = table1
+		table1 = temp
 
 	n = len(table1)
 	m = len(table2)
